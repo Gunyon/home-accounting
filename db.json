@@ -1,0 +1,166 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "name": "Vadim"
+    },
+    {
+      "email": "gabureac.oleg@gmail.com",
+      "password": "123456789",
+      "name": "Oleg",
+      "id": 2
+    }
+  ],
+  "bill": {
+    "value": 299185,
+    "currency": "RUB"
+  },
+  "currency": {
+    "base": "RUB",
+    "date": "2018-06-19",
+    "rates": {
+      "EUR": 0.015343,
+      "USD": 0.017183
+    }
+  },
+  "categories": [
+    {
+      "name": "House",
+      "capacity": 15000,
+      "id": 1
+    },
+    {
+      "name": "Food",
+      "capacity": 10000,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Car",
+      "capacity": 7000
+    },
+    {
+      "name": "Sport",
+      "capacity": 10,
+      "id": 4
+    },
+    {
+      "name": "School",
+      "capacity": 1500,
+      "id": 5
+    },
+    {
+      "name": "Beauty",
+      "capacity": 700,
+      "id": 6
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "12.06.2017 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 1300,
+      "category": 1,
+      "date": "13.06.2017 19:49:02",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "type": "income",
+      "amount": 1480,
+      "category": 2,
+      "date": "17.06.2017 14:00:48",
+      "id": 3,
+      "description": "Поход в окей с баллами. Бесплатная еда"
+    },
+    {
+      "type": "outcome",
+      "amount": 2470,
+      "category": 2,
+      "date": "17.06.2017 14:00:58",
+      "id": 4,
+      "description": "Закупка на неделю"
+    },
+    {
+      "type": "outcome",
+      "amount": 4000,
+      "category": 3,
+      "date": "10.06.2017 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
+    },
+    {
+      "category": 6,
+      "type": "income",
+      "amount": 100,
+      "description": "avon products",
+      "date": "09.09.2018 00:03:41",
+      "id": 6
+    },
+    {
+      "category": 1,
+      "type": "outcome",
+      "amount": 50,
+      "description": "over amount",
+      "date": "09.09.2018 00:15:07",
+      "id": 7
+    },
+    {
+      "category": 6,
+      "type": "income",
+      "amount": 200000,
+      "description": "avon products",
+      "date": "09.09.2018 00:15:39",
+      "id": 8
+    },
+    {
+      "category": 6,
+      "type": "outcome",
+      "amount": 200,
+      "description": "avon products",
+      "date": "09.09.2018 19:05:12",
+      "id": 9
+    },
+    {
+      "category": 6,
+      "type": "outcome",
+      "amount": 400,
+      "description": "avon products",
+      "date": "09.09.2018 19:05:32",
+      "id": 10
+    },
+    {
+      "category": 4,
+      "type": "outcome",
+      "amount": 15,
+      "description": "Equipment",
+      "date": "09.09.2018 19:06:08",
+      "id": 11
+    },
+    {
+      "category": 5,
+      "type": "outcome",
+      "amount": 50,
+      "description": "backpack",
+      "date": "09.09.2018 19:07:08",
+      "id": 12
+    },
+    {
+      "category": 5,
+      "type": "outcome",
+      "amount": 200,
+      "description": "test",
+      "date": "11.09.2018 16:53:17",
+      "id": 13
+    }
+  ]
+}

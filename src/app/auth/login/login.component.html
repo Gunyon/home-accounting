@@ -1,0 +1,60 @@
+
+<p class="text-xs-center">Login in your account</p>
+<div
+    @fade
+    *ngIf="message.text"
+    class="alert alert-{{ message.type }}">{{ message.text }}</div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div
+        class="form-group"
+        [ngClass]="{ 'has-error': form.get('email').invalid && form.get('email').touched }"
+    >
+        <label for="email">Email</label>
+        <input
+            type="text"
+            class="form-control underlined"
+            id="email"
+            placeholder="Email"
+            formControlName="email"
+        >
+        <span
+            class="form-help-text"
+            *ngIf="form.get('email').invalid && form.get('email').touched"
+            >
+            <span *ngIf="form.get('email').errors.required">Email is required</span>
+            <span *ngIf="form.get('email').errors.email">Invalid email</span>
+        </span>
+    </div>
+    <div
+        class="form-group"
+        [ngClass]="{ 'has-error': form.get('password').invalid && form.get('password').touched }"
+    >
+        <label for="password">Password</label>
+        <input
+            type="password"
+            class="form-control underlined"
+            id="password"
+            placeholder="Password"
+            formControlName="password"
+        >
+        <span
+            class="form-help-text"
+            *ngIf="form.get('password').invalid && form.get('password').touched"
+            >
+            <span *ngIf="form.get('password').errors.required">Password is required</span>
+            <span *ngIf="form.get('password').errors.minlength">Too short password(min 6 chars)</span>
+        </span>
+    </div>
+    <div class="form-group">
+        <button
+            type="submit"
+            class="btn btn-block btn-primary"
+            [disabled]="form.invalid"
+            >Log in</button>
+    </div>
+    <div class="form-group">
+        <p class="text-muted text-xs-center">
+            Not signed up yet? <a [routerLink]="'/registration'">Sign Up!</a>
+        </p>
+    </div>
+</form>
